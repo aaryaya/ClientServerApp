@@ -80,6 +80,7 @@ ClientServerApp/
 ├── client2.java           # Client implementation
 ├── client3.java           # Client implementation
 ├── connection_info.txt    # Connection information
+├── .gitignore             # Git ignore file
 └── README.md              # Project documentation
 
 ```
