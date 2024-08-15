@@ -1,5 +1,4 @@
 # ClientServerApp
-Here’s the detailed content for both the `connection_info.txt` and `README.md` files.
 
 ### `README.md`
 ```md
