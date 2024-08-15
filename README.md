@@ -48,8 +48,10 @@ This project implements a multi-client server application in Java using socket p
    ```
 2. **Compile the Java files:**
    ```bash
-   javac Server.java
-   javac client.java
+   Server.java
+   client.java
+   client2.java
+   client3.java
    ```
 
 ### Running the Server
@@ -73,9 +75,13 @@ This project implements a multi-client server application in Java using socket p
 
 ```bash
 ClientServerApp/
-├── Server.java         # Server implementation
-├── client.java         # Client implementation
-└── README.md           # Project documentation
+├── Server.java            # Server implementation
+├── client.java            # Client implementation
+├── client2.java           # Client implementation
+├── client3.java           # Client implementation
+├── connection_info.txt    # Connection information
+└── README.md              # Project documentation
+
 ```
 
 ## Future Enhancements
@@ -87,6 +93,7 @@ ClientServerApp/
 ## License
 
 This project is open-source and free to use.
-```
 
-You can copy and paste this Markdown content into your `README.md` file for a well-organized and professional project description.
+## Author
+Aarya Shirbhate
+
