@@ -1,0 +1,44 @@
+Connection Information
+
+## Server Details
+- IP Address:<Your server IP address>
+- Port:6000
+- Startup Instructions:
+  - Ensure that the Java Development Kit (JDK) is installed.
+  - Compile the `Server.java` file.
+  - Run the server using the command: `java Server`.
+  - Ensure that the port `6000` is open on the firewall if applicable.
+  - The server can accommodate multiple clients, with one being designated as the coordinator.
+
+## Client Details
+- Client ID: Each client must have a unique ID.
+- Server IP Address: Clients must know the server's IP address.
+- Port: 6000
+- Connection Instructions:
+  - Ensure the JDK is installed on the client machine.
+  - Compile the `client.java` file.
+  - Run the client using the command: `java client`.
+  - Provide the server's IP address and port (6000) when prompted.
+  - Enter a unique client ID when prompted.
+  - Clients can communicate with the server and other connected clients via broadcast or private messages.
+
+## Commands
+- /quit: Disconnects the client from the server.
+- @<clientId> <message>: Sends a private message to the client with the specified `clientId`.
+- /memberdetails (Coordinator only): Retrieves details about all connected clients, including their IP addresses and ports.
+
+## Network Setup
+- Ensure that both server and clients are on the same local network, or configure port forwarding if clients connect from a different network.
+- If accessing the server remotely, make sure the server IP is public and accessible to clients.
+- Port forwarding or NAT traversal may be necessary if using the system over the internet.
+
+## Security Information
+- No encryption is implemented in this basic setup. If security is a concern, consider adding SSL/TLS for encrypted communication.
+- Clients and the server authenticate only through client IDs, so ensure IDs are unique to prevent conflicts.
+
+## Troubleshooting
+- Client can't connect to server:
+  - Verify that the server is running and the correct IP address and port are provided.
+  - Ensure that the firewall is not blocking the connection on port `6000`.
+- Client disconnects abruptly:
+  - The server will attempt to handle abrupt client disconnections, but if persistent issues arise, check the network stability.
